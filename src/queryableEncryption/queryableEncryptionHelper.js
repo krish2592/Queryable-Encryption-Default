@@ -158,15 +158,12 @@ export async function getAutoEncryptionOptions(
       cryptSharedLibPath: process.env.SHARED_LIB_PATH, // Path to your Automatic Encryption Shared Library
     };
 
-    console.log({sharedLibraryPathOptions:sharedLibraryPathOptions});
-
     const autoEncryptionOptions = {
       keyVaultNamespace,
       kmsProviders,
       sharedLibraryPathOptions,
     };
     // end-auto-encryption-options
-    console.log({"jahsjks": autoEncryptionOptions});
     return autoEncryptionOptions;
   }
 }

@@ -108,7 +108,7 @@ async function runExample() {
   const findResult = await encryptedCollection.findOne({
     "patientRecord.ssn": "987-65-4320",
   });
-  console.log(findResult,"kjsdhkjdhkjcnkdcnkcn");
+  console.log(findResult);
   // end-find-document
 
   // start-find-document
@@ -116,7 +116,7 @@ async function runExample() {
   const findResult2 = await encryptedCollection.findOne({
     "patientRecord.clientId": "CLIENT-ALPHA",
   });
-  console.log(findResult2, "nhjdhkjfdhwjelhfkjhnsdzkjhbfaskjhbfdckjhn");
+  console.log(findResult2);
   // end-find-document
 
   await encryptedClient.close();
